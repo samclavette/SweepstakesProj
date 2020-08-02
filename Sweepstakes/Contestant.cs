@@ -8,17 +8,17 @@ namespace Sweepstakes
 {
     class Contestant
     {
-        private string firstName;
-        private string lastName;
-        private string email;
-        private int registrationNumber;
+        public string firstName;
+        public string lastName;
+        public string email;
+        public int registrationNumber;
 
-        public Contestant(string firstName, string lastName, string email, int registrationNumber)
+        public Contestant()
         {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.email = email;
-            this.registrationNumber = registrationNumber;
-        }
+            firstName = UserInterface.EnterFirstName();
+            lastName = UserInterface.EnterLastName();
+            email = UserInterface.EnterEmail();
+            registrationNumber = UserInterface.EnterRegistrationNumber();
+        } 
     }
 }
