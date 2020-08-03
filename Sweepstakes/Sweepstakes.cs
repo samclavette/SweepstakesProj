@@ -8,7 +8,13 @@ namespace Sweepstakes
 {
     class Sweepstakes
     {
-        Dictionary<> dictionary;
+        private Dictionary<int, Contestant> contestants;
+        private string name;
+        public string Name
+        {
+            get { return name; }
+        }
+
 
         public Sweepstakes(string name)
         {
