@@ -9,6 +9,7 @@ namespace Sweepstakes
     class Sweepstakes
     {
         private Dictionary<int, Contestant> contestants;
+        public Random rand;
         private string name;
         public string Name
         {
@@ -18,17 +19,19 @@ namespace Sweepstakes
 
         public Sweepstakes(string name)
         {
-
+            this.name = name;
         }
 
         public void RegisterContestant(Contestant contestant)
         {
-
+            contestants.Add(contestant.registrationNumber, contestant);            
         }
 
         public Contestant PickWinner()
         {
-            return null;
+            int randomInt = rand.Next(contestants.Count);
+            Contestant contestant = contestants.Values.ElementAt(randomInt);
+            return contestant;
         }
 
         public void PrintContestantInfo(Contestant contestant)

@@ -15,9 +15,9 @@ namespace Sweepstakes
 
         public Contestant()
         {
-            firstName = UserInterface.EnterFirstName();
-            lastName = UserInterface.EnterLastName();
-            email = UserInterface.EnterEmail();
+            firstName = UserInterface.EnterInformation("first name");
+            lastName = UserInterface.EnterInformation("last name");
+            email = UserInterface.EnterInformation("email address");
             registrationNumber = UserInterface.EnterRegistrationNumber();
         } 
     }
