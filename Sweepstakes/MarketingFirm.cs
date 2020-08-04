@@ -12,12 +12,12 @@ namespace Sweepstakes
 
         public MarketingFirm(ISweepstakesManager manager)
         {
-
+            this.manager = manager;
         }
         
         public void CreateSweepstakes()
         {
-
+            Sweepstakes sweepstakes = new Sweepstakes("New Sweepstakes");
         }
     }
 }

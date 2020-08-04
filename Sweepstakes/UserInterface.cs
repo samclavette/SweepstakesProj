@@ -15,6 +15,19 @@ namespace Sweepstakes
             return input;
         }
 
+        public static string EnterManagerChoice()
+        {
+            Console.WriteLine("Please choose a Sweepstakes Manager type number:\n1.)Stack\n2.)Queue");
+            string input = Console.ReadLine();
+            if (input != "1" || input != "2")
+            {
+                EnterManagerChoice();
+                return input;
+            }
+            else
+            return input;
+        }
+
         //public static string EnterLastName()
         //{
         //    Console.WriteLine("Please enter your last name: ");
