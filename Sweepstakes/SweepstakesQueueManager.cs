@@ -10,14 +10,17 @@ namespace Sweepstakes
     {
         private Queue<Sweepstakes> queue;
 
+        //insert is enqueue, delete is dequeue
+
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-
+            queue.Enqueue(sweepstakes);
         }
 
         public Sweepstakes GetSweepstakes()
         {
-            return null;
+            Sweepstakes sweepstakesFromQueue = queue.Dequeue();
+            return sweepstakesFromQueue;
         }
     }
 }

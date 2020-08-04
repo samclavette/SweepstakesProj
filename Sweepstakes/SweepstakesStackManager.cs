@@ -10,14 +10,17 @@ namespace Sweepstakes
     {
         private Stack<Sweepstakes> stack;
 
+        // insert is push, delete is pop
+
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-
+            stack.Push(sweepstakes);
         }
 
         public Sweepstakes GetSweepstakes()
         {
-            return null;
+            Sweepstakes sweepstakesFromStack = stack.Pop();
+            return sweepstakesFromStack;
         }
     }
 }
