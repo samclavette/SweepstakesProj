@@ -16,10 +16,11 @@ namespace Sweepstakes
             get { return name; }
         }
 
-
         public Sweepstakes(string name)
         {
             this.name = name;
+            contestants = new Dictionary<int, Contestant>();
+            rand = new Random();
         }
 
         public void RegisterContestant(Contestant contestant)
@@ -36,7 +37,7 @@ namespace Sweepstakes
 
         public void PrintContestantInfo(Contestant contestant)
         {
-
+            Console.WriteLine("The winner is: " + contestant.firstName + contestant.lastName + contestant.email + contestant.registrationNumber);
         }
     }
 }
