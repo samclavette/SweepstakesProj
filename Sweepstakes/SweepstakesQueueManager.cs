@@ -10,8 +10,7 @@ namespace Sweepstakes
     {
         private Queue<Sweepstakes> queue;
 
-        //insert is enqueue, delete is dequeue
-
+        // dependency injection?
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
             queue.Enqueue(sweepstakes);

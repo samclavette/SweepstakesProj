@@ -10,8 +10,7 @@ namespace Sweepstakes
     {
         private Stack<Sweepstakes> stack;
 
-        // insert is push, delete is pop
-
+        // dependency injection?
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
             stack.Push(sweepstakes);

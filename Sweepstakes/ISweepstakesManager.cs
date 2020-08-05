@@ -8,6 +8,7 @@ namespace Sweepstakes
 {
     interface ISweepstakesManager
     {
+        // dependency injection?
         void InsertSweepstakes(Sweepstakes sweepstakes);
 
         Sweepstakes GetSweepstakes();
